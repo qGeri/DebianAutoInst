@@ -1,3 +1,4 @@
+#!/bin/bash
 echo 'Creating Swapfile!'
 fallocate -l 4G /swapfile
 chmod 600 swapfile
