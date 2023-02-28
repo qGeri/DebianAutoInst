@@ -7,10 +7,7 @@ swapon swapfile
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 echo 'Swapfile created!'
 echo 'Add repositories!'
-apt-cache search {package}
-apt-cache search wget
-apt-cache search wget | grep wget
-apt search wget
+apt install wget
 echo 'deb http://deb.debian.org/debian bullseye-backports main contrib non-free' | sudo tee -a /etc/apt/sources.list
 #mono
 sudo apt install apt-transport-https dirmngr gnupg ca-certificates
