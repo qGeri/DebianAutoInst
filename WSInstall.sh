@@ -29,4 +29,7 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 echo 'Install packages!'
 apt update -y
 apt upgrade -y
-apt install -y gnome-session firefox-esr gnome-calculator gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit nautilus eog gnome-shell-extensions gnome-shell-extension-appindicator gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-dashtodock gnome-system-monitor gnome-terminal thunderbird g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice gufw clamtk clamtk-gnome
+apt install -y gnome-session firefox-esr gnome-calculator gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit nautilus eog gnome-shell-extensions gnome-shell-extension-appindicator gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-dashtodock gnome-system-monitor gnome-terminal thunderbird g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice gufw clamtk clamtk-gnome dconf-editor
+apt update -y
+apt upgrade -y
+echo 'Configure!'
