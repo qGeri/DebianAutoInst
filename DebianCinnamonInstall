@@ -22,5 +22,5 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 echo 'Install packages!'
 apt update -y
 apt upgrade -y
-apt install -y cinnamon-core evince gnome-calculator gnome-terminal gnome-screenshot gnome-disk-utility gnome-system-monitor gnome-calendar gnome-clocks file-roller gedit synaptic nemo eog gufw clamtk
+apt install -y cinnamon-core mesa-vulkan-drivers evince gnome-calculator gnome-terminal gnome-screenshot gnome-disk-utility gnome-system-monitor gnome-calendar gnome-clocks file-roller gedit synaptic nemo eog gufw clamtk
 apt install -y firefox-esr thunderbird g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice
