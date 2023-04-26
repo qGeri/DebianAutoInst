@@ -20,11 +20,11 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https:/
 sudo sh -c 'echo "deb https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
 wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 echo 'Install packages!'
+dpkg --add-architecture i386; apt update -y
 apt update -y
 apt upgrade -y
 apt install -y kde-plasma-desktop mesa-utils mesa-vulkan-drivers firefox-esr synaptic thunderbird g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice gufw clamtk
 apt install -y steam-installer steam-devices 
-dpkg --add-architecture i386; apt update -y
 apt upgrade -y
 echo 'Configure!'
 
