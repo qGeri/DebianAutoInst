@@ -29,9 +29,9 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 echo 'Install packages!'
 apt update -y
 apt upgrade -y
-apt install -y gnome-session firefox-esr gnome-calculator gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit nautilus eog 
-apt install -y gnome-shell-extensions gnome-shell-extension-appindicator gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-dashtodock gnome-system-monitor gnome-terminal thunderbird
-apt install -y g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice gufw clamtk clamtk-gnome dconf-editor
+apt install -y gnome-session gnome-calculator planner gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit nautilus nautilus-admin nautilus-data eog gcolor3 gedit-plugins gnome-passwordsafe
+apt install -y gnome-shell-extensions gnome-shell-extension-top-icons-plus gnome-shell-extension-appindicator gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-dashtodock gnome-system-monitor gnome-terminal gnome-shell-extension-desktop-icons-ng gnome-shell-extension-gpaste gnome-shell-extension-freon gnome-shell-extension-tiling-assistant
+apt install -y firefox-esr thunderbird g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice gufw clamtk clamtk-gnome dconf-editor
 apt update -y
 apt upgrade -y
 echo 'Configure!'
