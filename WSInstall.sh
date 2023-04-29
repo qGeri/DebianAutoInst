@@ -5,7 +5,7 @@
 #mkswap swapfile
 #swapon swapfile
 #echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-echo 'Swapfile created!'
+#echo 'Swapfile created!'
 echo 'Add repositories!'
 apt install -y wget
 echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free' | sudo tee -a /etc/apt/sources.list
