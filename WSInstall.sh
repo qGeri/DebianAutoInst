@@ -29,7 +29,7 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 echo 'Install packages!'
 apt update -y
 apt upgrade -y
-apt install -y gnome-session gnome-calculator gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data eog gcolor3 gedit-plugins gnome-passwordsafe
+apt install -y gnome-session gnome-calculator gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data eog gcolor3 gedit-plugins gnome-passwordsafe gnome-font-viewer
 apt install -y gnome-shell-extensions gnome-shell-extension-top-icons-plus gnome-shell-extension-appindicator gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-dashtodock gnome-shell-extension-desktop-icons-ng gnome-shell-extension-gpaste gnome-shell-extension-freon gnome-shell-extension-tiling-assistant lm-sensors
 apt install -y firefox-esr thunderbird g3dviewer gimp gimp-data-extras inkscape krita blender mono-complete dotnet-sdk-7.0 codium unityhub vlc libreoffice gufw clamtk clamtk-gnome dconf-editor
 apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers vkd3d-compiler vkbasalt primus-vk radeontop
