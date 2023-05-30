@@ -50,6 +50,6 @@ echo 'Configure!'
 useradd -m OME
 passwd -e OME
 groupadd Admin
-groupadd AssetOnly
-groupadd OfficeOnly
-groupadd MarketingOnly
+groupadd Assets
+groupadd Office
+groupadd Marketing
