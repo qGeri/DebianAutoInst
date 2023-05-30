@@ -48,3 +48,8 @@ apt update -y
 apt upgrade -y
 echo 'Configure!'
 useradd -m OME
+passwd -e OME
+groupadd Admin
+groupadd AssetOnly
+groupadd OfficeOnly
+groupadd MarketingOnly
