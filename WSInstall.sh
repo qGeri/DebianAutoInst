@@ -8,7 +8,7 @@
 #echo 'Swapfile created!'
 echo 'Add repositories!'
 apt install -y wget
-sed d /etc/apt/sources.list
+sed -i '1,$d' /etc/apt/sources.list
 echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
 echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
 echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
