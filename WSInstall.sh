@@ -8,7 +8,10 @@
 #echo 'Swapfile created!'
 echo 'Add repositories!'
 apt install -y wget
+echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
+echo 'deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
 echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
+echo 'deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware' | sudo tee -a /etc/apt/sources.list
 #mono
 apt install -y apt-transport-https dirmngr gnupg ca-certificates
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
