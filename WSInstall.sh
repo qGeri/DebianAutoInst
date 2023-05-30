@@ -47,3 +47,4 @@ apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-driver
 apt update -y
 apt upgrade -y
 echo 'Configure!'
+useradd -m OME
