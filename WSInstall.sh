@@ -47,9 +47,9 @@ apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-driver
 apt update -y
 apt upgrade -y
 echo 'Configure!'
-useradd -m OME
-passwd -e OME
-groupadd Admin
-groupadd Assets
-groupadd Office
-groupadd Marketing
+useradd -m user
+passwd -e user
+#groupadd Admin
+#groupadd Assets
+#groupadd Office
+#groupadd Marketing
