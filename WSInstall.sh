@@ -49,10 +49,10 @@ apt install -y gnome-session gnome-calculator gnome-package-updater lollypop gno
 apt install -y firefox-esr thunderbird g3dviewer vlc libreoffice gufw clamtk clamtk-gnome dconf-editor
 apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers libvulkan1 vkd3d-compiler vkbasalt primus-vk radeontop libavcodec-extra 
 #apt install -y gnome-shell-extensions lm-sensors gnome-shell-extension-dash-to-panel gnome-shell-extension-arc-menu gnome-shell-extension-top-icons-plus gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant
-#apt install -y gimp gimp-data-extras gimp-gmic inkscape krita krita-gmic blender audacity lmms lmms-common lmms-vst-server mono-complete dotnet-sdk-7.0 unityhub spotify-client
-#apt install apt-transport-https
-#apt update
-#apt install code
+apt install -y gimp gimp-data-extras gimp-gmic inkscape krita krita-gmic blender audacity lmms lmms-common lmms-vst-server mono-complete dotnet-sdk-7.0 unityhub
+apt install -y apt-transport-https
+apt update -y
+apt install -y code
 apt update -y
 apt upgrade -y
 echo 'Configure!'
