@@ -53,6 +53,11 @@ apt install -y gimp gimp-data-extras gimp-gmic inkscape krita krita-gmic blender
 apt install -y apt-transport-https
 apt update -y
 apt install -y code
+#xPadNeo
+apt-get install dkms linux-headers-`uname -r`
+git clone https://github.com/atar-axis/xpadneo.git
+cd xpadneo
+sudo ./install.sh
 apt update -y
 apt upgrade -y
 echo 'Configure!'
