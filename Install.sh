@@ -13,4 +13,5 @@ apt install -y wget
 ##################################################################################################################################################
 echo 'Install Desktop Environment!'
 apt install xfce4-session
-apt install thunar xfce4-goodies xfce4-terminal
+apt install dbus-user-session light-locker 
+apt install thunar thunar-archive-plugin thunar-font-manager thunar-media-tags-plugin thunar-volman xfce4-goodies xfce4-terminal
