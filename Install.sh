@@ -13,3 +13,4 @@ apt install -y wget
 ##################################################################################################################################################
 echo 'Install Desktop Environment!'
 apt install xfce4-session
+apt install thunar xfce4-goodies xfce4-terminal
