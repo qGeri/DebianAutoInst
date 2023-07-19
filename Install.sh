@@ -39,3 +39,14 @@ apt install -y gnome-session gnome-calculator gnome-package-updater lollypop gno
 apt install -y firefox-esr thunderbird g3dviewer vlc libreoffice gufw clamtk clamtk-gnome dconf-editor jstest-gtk
 
 apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers libvulkan1 vkd3d-compiler vkbasalt primus-vk radeontop libavcodec-extra lm-sensors 
+apt install -y gimp gimp-data-extras gimp-gmic inkscape krita krita-gmic blender audacity lmms lmms-common lmms-vst-server mono-complete dotnet-sdk-7.0 unityhub
+apt install -y apt-transport-https
+apt update -y
+apt install -y code
+#xPadNeo
+apt-get install dkms linux-headers-`uname -r`
+git clone https://github.com/atar-axis/xpadneo.git
+cd xpadneo
+sudo ./install.sh
+apt update -y
+apt upgrade -y
