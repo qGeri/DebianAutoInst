@@ -12,5 +12,4 @@ apt upgrade -y
 apt install -y wget
 ##################################################################################################################################################
 echo 'Install Desktop Environment!'
-apt install -y xfce4 xfce4-goodies
-apt install -y thunar-archive-plugin thunar-font-manager thunar-media-tags-plugin thunar-volman xfce4-terminal
+
