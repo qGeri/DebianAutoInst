@@ -43,12 +43,12 @@ apt install -y apt-transport-https
 apt update -y
 apt install -y code
 #xPadNeo
-apt-get install dkms linux-headers-`uname -r`
+apt-get install -y dkms linux-headers-`uname -r`
 git clone https://github.com/atar-axis/xpadneo.git
 cd xpadneo
 sudo ./install.sh
 apt update -y
 apt upgrade -y
 #MissionCenter
-apt install build-essential curl git gettext python3-pip libadwaita-1-dev python3-gi libudev-dev libdrm-dev libgbm-dev desktop-file-utils meson
+apt install -y build-essential curl git gettext python3-pip libadwaita-1-dev python3-gi libudev-dev libdrm-dev libgbm-dev desktop-file-utils meson
 
