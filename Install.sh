@@ -37,3 +37,5 @@ apt upgrade -y
 echo 'Install Desktop Environment!'
 apt install -y gnome-session gnome-calculator gnome-package-updater lollypop gnome-sound-recorder gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data eog gcolor3 gedit-plugins gnome-passwordsafe gnome-font-viewer
 apt install -y firefox-esr thunderbird g3dviewer vlc libreoffice gufw clamtk clamtk-gnome dconf-editor jstest-gtk
+
+apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers libvulkan1 vkd3d-compiler vkbasalt primus-vk radeontop libavcodec-extra lm-sensors 
