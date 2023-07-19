@@ -35,4 +35,5 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 apt update -y
 apt upgrade -y
 echo 'Install Desktop Environment!'
-
+apt install -y gnome-session gnome-calculator gnome-package-updater lollypop gnome-sound-recorder gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data eog gcolor3 gedit-plugins gnome-passwordsafe gnome-font-viewer
+apt install -y firefox-esr thunderbird g3dviewer vlc libreoffice gufw clamtk clamtk-gnome dconf-editor jstest-gtk
