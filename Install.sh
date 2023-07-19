@@ -9,7 +9,28 @@ echo 'deb http://security.debian.org/debian-security bookworm-security main cont
 apt update -y
 apt upgrade -y
 ##################################################################################################################################################
-apt install -y wget
+echo 'Add external repositories!'
+##################################################################################################################################################
+echo 'Add Mono repositories!'
+apt install -y apt-transport-https dirmngr gnupg ca-certificates
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/debian stable-buster main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+###################################################################################################################################################
+echo 'Add Dotnet repositories!'
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+######################################################################################################################################################
+echo 'Add VSCode repositories!'
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+######################################################################################################################################################
+echo 'Add Unity Engine repositories!'
+sudo sh -c 'echo "deb https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 ##################################################################################################################################################
 echo 'Install Desktop Environment!'
 
