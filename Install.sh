@@ -50,5 +50,13 @@ cd xpadneo
 sudo ./install.sh
 apt update -y
 apt upgrade -y
+#Steam!
+dpkg --add-architecture i386
+apt update
+apt install -y steam-installer
+apt install -y mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386
+apt install -y steam-devices
+#DiscorUpdater
+#alias update-discord='wget "https://discord.com/api/download?platform=linux&format=deb" -O ./discord.deb;sudo apt install ./discord.deb;sudo rm ./discord.deb'
 
 
