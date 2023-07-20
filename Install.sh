@@ -1,10 +1,4 @@
 #!/bin/bash
-echo 'Creating Swapfile!'
-fallocate -l 20G /swapfile
-chmod 600 swapfile
-mkswap swapfile
-swapon swapfile
-echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 ##################################################################################################################################################
 echo 'Add repositories!'
 sed -i '1,$d' /etc/apt/sources.list
