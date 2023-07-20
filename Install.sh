@@ -58,5 +58,5 @@ apt install -y mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 li
 apt install -y steam-devices
 #DiscorUpdater
 #alias update-discord='wget "https://discord.com/api/download?platform=linux&format=deb" -O ./discord.deb;sudo apt install ./discord.deb;sudo rm ./discord.deb'
-
+#AppIndicator/KStatusNotifierItem support, Bluetooth Quick Connect, Favourites in AppGrid, firefox-pip, Overview-Background, replace-activities-label, Tiling Assistant
 
