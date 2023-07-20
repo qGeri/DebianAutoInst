@@ -1,4 +1,10 @@
 #!/bin/bash
+echo 'Creating Swapfile!'
+fallocate -l 20G /swapfile
+chmod 600 swapfile
+mkswap swapfile
+swapon swapfile
+echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 ##################################################################################################################################################
 echo 'Add repositories!'
 sed -i '1,$d' /etc/apt/sources.list
@@ -35,13 +41,14 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 apt update -y
 apt upgrade -y
 echo 'Install Desktop Environment!'
-apt install -y gnome-session gnome-calculator gnome-commander gnome-package-updater lollypop gnome-sound-recorder gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data eog gcolor3 gedit-plugins gnome-passwordsafe gnome-font-viewer
+apt install -y gnome-session gnome-calculator gnome-package-updater gnome-sound-recorder gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gparted gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data nautilus-extension-gnome-terminal nautilus-image-converter eog eog-plugins gcolor3 gedit-plugins gnome-passwordsafe gnome-font-viewer
 apt install -y firefox-esr thunderbird g3dviewer vlc libreoffice gufw clamtk clamtk-gnome dconf-editor jstest-gtk
 apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers libvulkan1 vkd3d-compiler vkbasalt primus-vk radeontop libavcodec-extra lm-sensors 
-apt install -y gimp gimp-data-extras gimp-gmic inkscape krita krita-gmic blender audacity lmms lmms-common lmms-vst-server mono-complete dotnet-sdk-7.0 unityhub
+apt install -y gimp gimp-data-extras gimp-gmic inkscape blender audacity mono-complete dotnet-sdk-7.0 unityhub
 apt install -y apt-transport-https
 apt update -y
 apt install -y code
+apt install -y doublecmd-common doublecmd-gtk libunrar5 mplayer
 #xPadNeo
 apt-get install -y dkms linux-headers-`uname -r`
 git clone https://github.com/atar-axis/xpadneo.git
