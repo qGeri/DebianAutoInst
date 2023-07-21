@@ -33,4 +33,9 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 apt update -y
 apt upgrade -y
 sudo apt install -y kde-standard
-sudo apt install -y 
+sudo apt install -y apt install -y firefox-esr firefox-esr-l10n-hu thunderbird g3dviewer vlc libreoffice gufw clamtk jstest-gtk 
+apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers libvulkan1 vkd3d-compiler vkbasalt primus-vk radeontop libavcodec-extra lm-sensors 
+apt install -y gimp gimp-data-extras gimp-gmic inkscape blender audacity mono-complete dotnet-sdk-7.0 unityhub
+apt install -y apt-transport-https
+apt update -y
+apt install -y code
