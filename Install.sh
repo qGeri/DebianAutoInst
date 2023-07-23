@@ -35,14 +35,14 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 apt update -y
 apt upgrade -y
 echo 'Install Desktop Environment!'
-apt install -y gnome-core gnome-calculator gnome-package-updater gnome-sound-recorder gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gparted gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data nautilus-extension-gnome-terminal nautilus-image-converter eog eog-plugins gcolor3 gedit-plugins gnome-passwordsafe gnome-shell-extension-manager gnome-font-viewer
+apt install -y gnome-core gnome-commander gnome-calculator gnome-package-updater gnome-sound-recorder gnome-system-monitor gnome-terminal planner file-roller gnome-calendar gnome-clocks gnome-disk-utility gparted gnome-tweaks synaptic gedit gdebi nautilus nautilus-admin nautilus-data nautilus-extension-gnome-terminal nautilus-image-converter eog eog-plugins gcolor3 gedit-plugins gnome-passwordsafe gnome-shell-extension-manager gnome-font-viewer
 apt install -y firefox-esr firefox-esr-l10n-hu thunderbird g3dviewer vlc libreoffice gufw clamtk clamtk-gnome dconf-editor jstest-gtk
 apt install -y mesa-utils mesa-utils-extra mesa-vulkan-drivers mesa-vdpau-drivers mesa-va-drivers vulkan-tools vulkan-validationlayers libvulkan1 vkd3d-compiler vkbasalt primus-vk radeontop libavcodec-extra lm-sensors 
 apt install -y gimp gimp-data-extras gimp-gmic inkscape blender audacity mono-complete dotnet-sdk-7.0 unityhub
 apt install -y apt-transport-https
 apt update -y
 apt install -y code
-apt install -y doublecmd-common doublecmd-gtk libunrar5 mplayer
+apt install -y gir1.2-gtop-2.0 gir1.2-nm-1.0 gir1.2-clutter-1.0 gnome-system-monitor
 #xPadNeo
 #apt-get install -y dkms linux-headers-`uname -r`
 #git clone https://github.com/atar-axis/xpadneo.git
@@ -51,11 +51,11 @@ apt install -y doublecmd-common doublecmd-gtk libunrar5 mplayer
 apt update -y
 apt upgrade -y
 #Steam!
-dpkg --add-architecture i386
-apt update
-apt install -y steam-installer
-apt install -y mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386
-apt install -y steam-devices
+#dpkg --add-architecture i386
+#apt update
+#apt install -y steam-installer
+#apt install -y mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386
+#apt install -y steam-devices
 #DiscorUpdater
 #alias update-discord='wget "https://discord.com/api/download?platform=linux&format=deb" -O ./discord.deb;sudo apt install ./discord.deb;sudo rm ./discord.deb'
 #AppIndicator/KStatusNotifierItem support, Bluetooth Quick Connect, Favourites in AppGrid, firefox-pip, Overview-Background, replace-activities-label, Tiling Assistant
