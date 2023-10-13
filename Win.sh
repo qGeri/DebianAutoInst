@@ -10,4 +10,4 @@ echo 'deb http://security.debian.org/debian-security bookworm-security main cont
 apt update -y
 apt upgrade -y
 #####################################################################################################################################################
-apt install -y gnome-session 
+apt install -y gnome-session gnome-terminal
