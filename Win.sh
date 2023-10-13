@@ -10,4 +10,5 @@ echo 'deb http://security.debian.org/debian-security bookworm-security main cont
 apt update -y
 apt upgrade -y
 #####################################################################################################################################################
-apt install -y gnome-session gnome-terminal
+apt install -y gnome-session gnome-terminal 
+apt install -y gnome-shell-extension-arc-menu gnome-shell-extension-bluetooth-quick-connect gnome-shell-extension-dash-to-panel gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant gnome-shell-extension-appindicator
