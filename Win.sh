@@ -9,3 +9,5 @@ echo 'deb http://deb.debian.org/debian bookworm-backports main contrib non-free 
 echo 'deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware' | tee -a /etc/apt/sources.list
 apt update -y
 apt upgrade -y
+#####################################################################################################################################################
+apt install -y gnome-session 
