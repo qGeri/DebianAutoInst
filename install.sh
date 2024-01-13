@@ -1,5 +1,6 @@
 #!/bin/bash
 ##################################################################################################################################################
+apt install -y wget
 echo 'Add repositories!'
 sed -i '1,$d' /etc/apt/sources.list
 echo 'deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware' | tee -a /etc/apt/sources.list
