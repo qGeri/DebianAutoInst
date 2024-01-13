@@ -36,3 +36,4 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 apt update -y
 apt upgrade -y
 echo 'Install Desktop Environment!'
+apt install sway
